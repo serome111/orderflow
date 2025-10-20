@@ -14,6 +14,16 @@ FastAPI project that addresses the three parts of the technical exercise:
 - Dependencies: `pip install -r requirements.txt`.
 - Docker (optional) to run Redis or containerize the app.
 
+### Environment configuration
+
+Copy the example file and customize values as needed:
+
+```bash
+cp .env.example .env
+```
+
+Leave `ORDER_QUEUE_REDIS_URL` blank to skip the optional Redis consumer, or set it to a value such as `redis://localhost:6379/0` when running Redis locally.
+
 ---
 
 ## Run the API
